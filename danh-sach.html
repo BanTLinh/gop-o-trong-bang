@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Thực hành Danh sách HTML & CSS</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 30px; line-height: 1.6; }
+        h2 { color: #0056b3; }
+        
+        /* 1. list-style-type */
+        ul.square-list { list-style-type: square; }
+        ol.roman-list { list-style-type: upper-roman; }
+
+        /* 2. list-style-position */
+        ul.inside-list { list-style-position: inside; background: #eef2f3; padding: 10px; }
+        ul.outside-list { list-style-position: outside; background: #eef2f3; padding: 10px; }
+
+        /* 3. Thuộc tính rút gọn list-style */
+        ul.short-style { list-style: circle inside; }
+
+        /* 4. Định kiểu với màu sắc */
+        ol.color-list { background: #fff3cd; padding: 15px 15px 15px 40px; border-radius: 5px; }
+        ol.color-list li { color: #d9534f; font-weight: bold; margin: 5px 0; }
+        ol.color-list li span { color: #333333; font-weight: normal; }
+    </style>
+</head>
+<body>
+
+    <h1>Thực hành Định kiểu Danh sách (CSS List)</h1>
+
+    <h2>1. Thay đổi kiểu đánh dấu (list-style-type)</h2>
+    <ul class="square-list">
+        <li>Mục sử dụng ô vuông (square)</li>
+        <li>Mục sử dụng ô vuông (square)</li>
+    </ul>
+    <ol class="roman-list">
+        <li>Mục sử dụng số La Mã (upper-roman)</li>
+        <li>Mục sử dụng số La Mã (upper-roman)</li>
+    </ol>
+
+    <h2>2. Vị trí đánh dấu (list-style-position)</h2>
+    <p><strong>Inside (Bên trong):</strong></p>
+    <ul class="inside-list">
+        <li>Dòng nội dung dài để kiểm tra vị trí của dấu đầu dòng khi xuống hàng sẽ nằm lùi vào trong.</li>
+    </ul>
+    <p><strong>Outside (Bên ngoài):</strong></p>
+    <ul class="outside-list">
+        <li>Dòng nội dung dài để kiểm tra vị trí của dấu đầu dòng khi xuống hàng sẽ căn thẳng lề với chữ dòng trên.</li>
+    </ul>
+
+    <h2>3. Định kiểu danh sách kết hợp màu sắc</h2>
+    <ol class="color-list">
+        <li><span>Nội dung mục 1 có màu chữ khác với số thứ tự.</span></li>
+        <li><span>Nội dung mục 2 có màu chữ khác với số thứ tự.</span></li>
+    </ol>
+
+</body>
+</html>
