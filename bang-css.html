@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Thực hành Định kiểu Bảng CSS</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 30px; }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse; /* Gộp đường viền đôi thành viền đơn */
+        }
+
+        th, td {
+            border: 1px solid #dddddd; /* Đường viền */
+            padding: 12px;             /* Padding khoảng cách trong ô */
+        }
+
+        th {
+            height: 40px;              /* Chiều cao hàng tiêu đề */
+            background-color: #04AA6D; /* Màu nền xanh */
+            color: white;              /* Màu chữ trắng */
+            text-align: left;          /* Căn lề trái */
+        }
+
+        td {
+            vertical-align: middle;    /* Căn dọc giữa ô */
+        }
+
+        tr:nth-child(even) { background-color: #f9f9f9; } /* Màu nền xen kẽ */
+        tr:hover { background-color: #f1f1f1; }           /* Hiệu ứng rê chuột */
+    </style>
+</head>
+<body>
+
+    <h2>Danh sách nhân sự (Định kiểu Bảng CSS)</h2>
+
+    <table>
+        <tr>
+            <th>Họ và tên</th>
+            <th>Chức vụ</th>
+            <th>Phòng ban</th>
+        </tr>
+        <tr>
+            <td>Nguyễn Văn A</td>
+            <td>Lập trình viên</td>
+            <td>Kỹ thuật</td>
+        </tr>
+        <tr>
+            <td>Trần Thị B</td>
+            <td>Thiết kế UI/UX</td>
+            <td>Sản phẩm</td>
+        </tr>
+        <tr>
+            <td>Lê Văn C</td>
+            <td>Quản lý dự án</td>
+            <td>Vận hành</td>
+        </tr>
+    </table>
+
+</body>
+</html>
